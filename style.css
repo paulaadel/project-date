@@ -3,9 +3,16 @@ body {
   text-align: center;
   margin: 0;
   background-color: #f9f4f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 body .container {
   padding: 30px;
+  width: 100%;
+  max-width: 800px;
 }
 body .container h1 {
   font-family: "Dancing Script", cursive;
@@ -51,6 +58,26 @@ body .container .popup.fade-in {
   animation: fadeIn 0.3s ease;
 }
 
+@media (max-width: 600px) {
+  body .container h1 {
+    font-size: 64px;
+  }
+  body .container .buttons button {
+    font-size: 32px;
+    padding: 20px 40px;
+    margin: 15px;
+    display: block;
+    width: 100%;
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body .container .popup {
+    width: 85%;
+    padding: 40px;
+    font-size: 48px;
+  }
+}
 @keyframes fadeIn {
   from {
     opacity: 0;
