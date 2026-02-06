@@ -60,22 +60,20 @@ body .container .popup.fade-in {
 
 @media (max-width: 600px) {
   body .container h1 {
-    font-size: 64px;
+    font-size: 36px;
   }
   body .container .buttons button {
-    font-size: 32px;
-    padding: 20px 40px;
-    margin: 15px;
-    display: block;
-    width: 100%;
-    max-width: 250px;
-    margin-left: auto;
-    margin-right: auto;
+    font-size: 18px;
+    padding: 12px 24px;
+    margin: 10px;
+    display: inline-block;
+    width: auto;
+    max-width: none;
   }
   body .container .popup {
-    width: 85%;
-    padding: 40px;
-    font-size: 48px;
+    width: 90%;
+    padding: 30px;
+    font-size: 24px;
   }
 }
 @keyframes fadeIn {
