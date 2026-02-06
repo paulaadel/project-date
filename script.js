@@ -9,7 +9,6 @@ noButton.addEventListener("mouseover", () => {
         noButton.style.left = rect.left + "px";
         noButton.style.top = rect.top + "px";
         noButton.style.margin = "0";
-        // Force reflow
         noButton.offsetHeight;
     }
     noButton.style.left = Math.random() * (window.innerWidth - noButton.offsetWidth) + "px";
@@ -25,5 +24,4 @@ popup.addEventListener("click", () => {
     popup.style.display = "none";
 });
 
-// Hide the popup initially
 popup.style.display = "none";
