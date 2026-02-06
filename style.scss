@@ -1,0 +1,85 @@
+// Variables
+$bg-color: #f9f4f5;
+$primary-color: #e91e63;
+$secondary-color: #ff4081;
+$hover-color: #ff5c8d;
+$font-body: 'Montserrat', sans-serif;
+$font-fancy: 'Dancing Script', cursive;
+
+body {
+  font-family: $font-body;
+  text-align: center;
+  margin: 0;
+  background-color: $bg-color;
+
+  .container {
+    padding: 30px;
+
+    h1 {
+      font-family: $font-fancy;
+      font-size: 48px;
+      margin-bottom: 30px;
+      color: $primary-color;
+    }
+
+    .buttons {
+      margin: 20px;
+
+      button {
+        font-family: $font-body;
+        font-size: 20px;
+        padding: 12px 24px;
+        margin: 10px;
+        border: none;
+        border-radius: 20px;
+        background-color: $secondary-color;
+        color: #fff;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background-color: $hover-color;
+        }
+      }
+
+
+    }
+
+    .popup {
+      display: none;
+      background-color: #fff;
+      border: 1px solid $primary-color;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 999;
+      font-family: $font-fancy;
+      font-size: 32px;
+      color: $primary-color;
+
+      &.fade-in {
+        animation: fadeIn 0.3s ease;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
