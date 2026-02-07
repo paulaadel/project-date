@@ -13,17 +13,14 @@ const moveNoButton = () => {
         noButton.style.left = rect.left + "px";
         noButton.style.top = rect.top + "px";
         noButton.style.margin = "0";
-        // Force reflow
         noButton.offsetHeight;
     }
     noButton.style.left = Math.random() * (window.innerWidth - noButton.offsetWidth) + "px";
     noButton.style.top = Math.random() * (window.innerHeight - noButton.offsetHeight) + "px";
 
-    // Increase yes button size
     yesScale += 0.15;
     yesButton.style.transform = `scale(${yesScale})`;
 
-    // Decrease no button size and opacity
     noScale -= 0.1;
     noOpacity -= 0.1;
 
@@ -35,7 +32,6 @@ const moveNoButton = () => {
     }
 };
 
-// Handle both hover (desktop) and tap (mobile)
 noButton.addEventListener("mouseover", moveNoButton);
 noButton.addEventListener("touchstart", (e) => {
     e.preventDefault();
